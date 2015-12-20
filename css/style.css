@@ -1,33 +1,197 @@
+/* Background pattern from subtlepatterns.com */
+
+.page-wrapper {
+	background-image: url(../img/whitediamond1.png);
+}
+
+
 /* ================================= 
  				HEADER
 ==================================== */
 
-h1, h2{
+h1,
+h2 {
 	color: white;
 	font-family: verdana, arial, sans-serif;
+	text-shadow: 2px 2px 10px #5d5b5b;
 }
 
-
-h1{
-	margin:0;
-	font-size: 5em;
+h1 {
+	margin: 0;
+	font-size: 2em;
 	text-transform: uppercase;
-	padding-top: 70px;
+	padding-top: 30px;
 }
 
-h2{
+h2 {
 	font-size: 2em;
 	font-style: italic;
 	margin-top: 10px;
-	
+}
+
+header {
+	background: url(../img/bgheader.jpg) no-repeat center /cover;
+	height: 200px;
+	text-align: center;
 }
 
 
-header{
-	background-image: url(../img/bgheader.jpg);
-	background-size: cover;
-	background-position: center center;
-	height: 400px;
+/* ================================= 
+ 			FOOTER
+==================================== */
+
+footer {
+	height: 30px;
+	background-color: #333;
+	font-size: 1em;
 	text-align: center;
-	
+	padding: 50px 0;
+	clear: both;
+}
+
+footer a {
+	color: #F48826;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding-left: 10px;
+	margin: 0 auto;
+}
+
+
+/* ================================= 
+ 				Base elements style
+==================================== */
+
+a {
+	text-decoration: none;
+	color: #D34810;
+}
+
+p,
+h3 {
+	font-family: verdana, arial, sans-serif;
+	color: #333;
+}
+
+p {
+	font-size: 1em;
+	padding: 0.2em;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+.wrapper h3 {
+	color: #3D4D6E;
+}
+
+.design-name,
+.zen-resources a,
+.design-archives a {
+	color: #F48826;
+}
+
+.designer-name {
+	color: #37425D;
+}
+
+ul {
+	padding: 0px;
+}
+
+ul a {
+	text-transform: uppercase;
+}
+
+ul li {
+	list-style: none;
+	padding: 20px 0;
+	font-weight: 200;
+}
+
+
+/*för layout*/
+
+.summary,
+.preamble,
+.main div {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.requirements,
+.benefits,
+.participation,
+.explanation,
+.preamble {
+	padding-top: 5px;
+}
+
+.requirements {
+	padding-bottom: 30px;
+}
+
+
+/*aside*/
+
+.wrapper {
+	padding: 10px 10px 90px 20px;
+}
+
+
+/* ================================= 
+MEDIA QUERIES
+==================================== */
+
+@media (min-width:768px) {
+	.summary,
+	.preamble,
+	.main div {
+		width: 50%;
+		margin: 30px 130px 0 130px;
+		float: left;
+		clear: both;
+	}
+	footer a {
+		color: #F48826;
+		font-weight: bold;
+		font-size: 2em;
+		text-transform: uppercase;
+		padding-left: 50px;
+		margin: 0 auto;
+	}
+	header {
+		background: url(../img/bgheader.jpg) no-repeat center /cover;
+		height: 400px;
+		text-align: center;
+	}
+	h1 {
+		margin: 0;
+		font-size: 5em;
+		text-transform: uppercase;
+		padding-top: 90px;
+	}
+	p {
+		font-size: 1.1em;
+		line-height: 2em;
+	}
+}
+
+@media (min-width:850px) {
+	/*sidebar*/
+	.wrapper {
+		position: absolute;
+		top: 400px;
+		right: 0;
+		background-color: red;
+		width: 30%;
+		margin: 0 auto;
+		border-radius: 5px 0 5px 5px;
+		background-color: rgba(0, 0, 0, 0.1);
+		padding: 10px 10px 90px 20px;
+		clear: both;
+	}
 }
