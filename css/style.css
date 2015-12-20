@@ -69,7 +69,8 @@ a {
 }
 
 p,
-h3 {
+h3,
+{
 	font-family: verdana, arial, sans-serif;
 	color: #333;
 }
@@ -112,6 +113,12 @@ ul li {
 	font-weight: 200;
 }
 
+header a{
+	color: #F48826;
+	text-shadow: 1px 2px 10px #5d5b5b;
+	text-transform: uppercase;
+	font-weight: 300;
+}
 
 /*för layout*/
 
